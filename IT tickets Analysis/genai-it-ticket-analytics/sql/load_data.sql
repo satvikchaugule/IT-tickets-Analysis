@@ -1,0 +1,24 @@
+-- load_data.sql
+-- Instructions:
+-- 1. Run schema.sql to create tables.
+-- 2. Use the CSV at data/processed/cleaned_tickets.csv
+-- 3. Import via the src/sql_loader.py Python pipeline for SQLite.
+-- 4. For MySQL, use LOAD DATA INFILE or mysqlimport after mapping columns:
+--    Ticket ID            -> ticket_id
+--    Customer Name        -> customer_name
+--    Customer Email       -> customer_email
+--    Customer Age         -> customer_age
+--    Customer Gender      -> customer_gender
+--    Product Purchased    -> product_purchased
+--    Date of Purchase     -> date_of_purchase
+--    Ticket Type          -> ticket_type
+--    Ticket Subject       -> ticket_subject
+--    Ticket Description   -> ticket_description
+--    Ticket Status        -> ticket_status
+--    Resolution           -> resolution
+--    Ticket Priority      -> ticket_priority
+--    Ticket Channel       -> ticket_channel
+--    First Response Time  -> first_response_time
+--    Time to Resolution   -> resolution_timestamp
+--    resolution_time_hours-> resolution_time_hours
+--    description_length   -> description_length

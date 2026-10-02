@@ -1,0 +1,6 @@
+Ticket Type,ticket_count,avg_resolution_hours,median_resolution_hours,unresolved_count,pct_of_total,unresolved_pct
+Refund request,1752,8.12,6.71,1156,20.69,65.98
+Technical issue,1747,7.37,6.38,1167,20.63,66.8
+Cancellation request,1695,7.69,6.37,1179,20.01,69.56
+Product inquiry,1641,7.68,6.98,1108,19.38,67.52
+Billing inquiry,1634,7.01,5.27,1090,19.29,66.71

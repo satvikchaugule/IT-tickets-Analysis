@@ -1,0 +1,4 @@
+- Analyzed 8469 customer support tickets using Python, Pandas, NumPy and Seaborn; engineered a reproducible preprocessing pipeline that retained 8469 records after deduplication, invalid-row removal and categorical normalization.
+- Designed a relational schema and ran 10 analytical SQL queries (volume, priority, SLA trends, unresolved backlog) via SQLAlchemy/SQLite; documented equivalent MySQL scripts for production deployment.
+- Integrated a cost-controlled GenAI assistant to summarize, categorize and suggest resolutions for 100 tickets, including structured JSON validation, retries, and a MOCK fallback for offline execution.
+- Authored Power BI dashboard specification (4 pages: Executive Overview, Ticket Analysis, Resolution Analysis, GenAI Insights), DAX measure library and full GitHub README / interview preparation documentation.

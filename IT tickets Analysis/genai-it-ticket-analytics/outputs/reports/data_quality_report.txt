@@ -1,0 +1,92 @@
+======================================================================
+RAW DATASET INSPECTION
+======================================================================
+Dataset Shape: 8469 rows x 17 columns
+Duplicate rows: 0
+Memory usage: 9.16 MB
+
+Column                         Dtype           Missing %  Unique     Notes
+------------------------------------------------------------------------------------------
+Ticket ID                      int64           0.0        8469       unique_key
+Customer Name                  object          0.0        8028       
+Customer Email                 object          0.0        8320       
+Customer Age                   int64           0.0        53         
+Customer Gender                object          0.0        3          low_cardinality
+Product Purchased              object          0.0        42         
+Date of Purchase               object          0.0        730        
+Ticket Type                    object          0.0        5          low_cardinality
+Ticket Subject                 object          0.0        16         
+Ticket Description             object          0.0        8077       
+Ticket Status                  object          0.0        3          low_cardinality
+Resolution                     object          67.3       2769       missing=5700
+Ticket Priority                object          0.0        4          low_cardinality
+Ticket Channel                 object          0.0        4          low_cardinality
+First Response Time            object          33.29      5470       missing=2819
+Time to Resolution             object          67.3       2728       missing=5700
+Customer Satisfaction Rating   float64         67.3       5          missing=5700; low_cardinality
+
+======================================================================
+CLEANED DATASET INSPECTION
+======================================================================
+Dataset Shape: 8469 rows x 19 columns
+Duplicate rows: 0
+Memory usage: 8.25 MB
+
+Column                         Dtype           Missing %  Unique     Notes
+------------------------------------------------------------------------------------------
+Ticket ID                      int64           0.0        8469       unique_key
+Customer Name                  object          0.0        8028       
+Customer Email                 object          0.0        8320       
+Customer Age                   int64           0.0        53         
+Customer Gender                object          0.0        3          low_cardinality
+Product Purchased              object          0.0        42         
+Date of Purchase               datetime64[ns]  0.0        730        
+Ticket Type                    object          0.0        5          low_cardinality
+Ticket Subject                 object          0.0        16         
+Ticket Description             object          0.0        8067       
+Ticket Status                  object          0.0        3          low_cardinality
+Resolution                     object          67.3       2769       missing=5700
+Ticket Priority                object          0.0        4          low_cardinality
+Ticket Channel                 object          0.0        4          low_cardinality
+First Response Time            datetime64[ns]  33.29      5470       missing=2819
+Time to Resolution             datetime64[ns]  67.3       2728       missing=5700
+Customer Satisfaction Rating   float64         67.3       5          missing=5700; low_cardinality
+resolution_time_hours          float64         83.42      780        missing=7065
+description_length             int64           0.0        231        
+
+======================================================================
+DATA QUALITY REPORT
+======================================================================
+
+Original rows:                     8469
+Duplicates removed:                0
+Invalid/problematic records:       0
+Final cleaned rows:                8469
+Rows retained:                     8469/8469 (100.0%)
+
+Modification details:
+  - Stripped whitespace / normalized text in 6158 cells across 14 text columns
+  - Found 1365 negative resolution times; set to NaN
+
+Missing value comparison (before -> after):
+Column                         Before Missing  After Missing  
+-----------------------------------------------------------------
+Customer Age                   0               0              
+Customer Email                 0               0              
+Customer Gender                0               0              
+Customer Name                  0               0              
+Customer Satisfaction Rating   5700            5700           
+Date of Purchase               0               0              
+First Response Time            2819            2819           
+Product Purchased              0               0              
+Resolution                     5700            5700           
+Ticket Channel                 0               0              
+Ticket Description             0               0              
+Ticket ID                      0               0              
+Ticket Priority                0               0              
+Ticket Status                  0               0              
+Ticket Subject                 0               0              
+Ticket Type                    0               0              
+Time to Resolution             5700            5700           
+description_length             0               0              
+resolution_time_hours          0               7065           

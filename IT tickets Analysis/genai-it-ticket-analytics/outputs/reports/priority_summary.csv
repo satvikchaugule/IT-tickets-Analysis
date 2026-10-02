@@ -1,0 +1,5 @@
+Ticket Priority,ticket_count,avg_resolution_hours,unresolved_count,pct_of_total,unresolved_pct
+Critical,2129,7.15,1403,25.14,65.9
+High,2085,8.07,1380,24.62,66.19
+Medium,2192,7.17,1498,25.88,68.34
+Low,2063,7.95,1419,24.36,68.78

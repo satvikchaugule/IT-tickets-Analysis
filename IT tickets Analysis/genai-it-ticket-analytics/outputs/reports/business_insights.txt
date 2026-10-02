@@ -1,0 +1,43 @@
+======================================================================
+BUSINESS INSIGHTS REPORT
+======================================================================
+
+Generated: 2026-09-30 02:05:36
+
+1. MOST COMMON PROBLEM
+----------------------------------------
+  FACT: Most frequent ticket subject is 'Refund request' with 576 tickets.
+  INTERPRETATION: This represents 6.8% of all tickets and may indicate a systemic issue requiring proactive resolution.
+
+2. HIGHEST PRIORITY PROBLEM
+----------------------------------------
+  FACT: There are 2129 Critical priority tickets. 1403 (65.9%) remain unresolved.
+  INTERPRETATION: Critical unresolved tickets pose operational risk and should be escalated immediately.
+
+3. PRODUCT WITH HIGHEST TICKET VOLUME
+----------------------------------------
+  FACT: Product 'Canon EOS' generated the most tickets (240).
+  INTERPRETATION: This product may benefit from additional support staffing, QA review, or customer-facing documentation.
+
+4. CATEGORY WITH LONGEST RESOLUTION TIME
+----------------------------------------
+  FACT: Ticket type 'Refund request' has the longest avg resolution time at 8.12 hours.
+  INTERPRETATION: Slow resolution in this category may indicate training gaps, complex tooling, or process bottlenecks.
+
+5. MOST SIGNIFICANT TREND
+----------------------------------------
+  FACT: From 2023-05 to 2023-06, ticket volume changed by 3028.57% (increase).
+  INTERPRETATION: Monitoring this trend helps forecast staffing and support capacity needs.
+
+6. UNRESOLVED TICKET PATTERN
+----------------------------------------
+  FACT: 5700 of 8469 tickets are currently unresolved (67.3%).
+  FACT: Ticket type 'Cancellation request' has the most unresolved tickets (1179).
+  INTERPRETATION: Unresolved tickets affect customer satisfaction and SLA compliance; a backlog review is recommended.
+
+7. POTENTIAL OPERATIONAL IMPROVEMENTS
+----------------------------------------
+  - Standardize ticket subjects to enable better automated categorization.
+  - Create knowledge-base articles for the top recurring ticket subjects.
+  - Current avg satisfaction rating: 2.99. Investigate segments with below-average scores.
+  - Track First Response Time SLA compliance to reduce initial wait periods.

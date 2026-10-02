@@ -1,0 +1,87 @@
+================================================================================
+FINAL PROJECT REPORT — GenAI IT Ticket Analytics & Resolution Assistant
+================================================================================
+Generated: 2026-09-30 02:05:38
+Pipeline wall time: 6.38 seconds
+
+Abstract
+----------------------------------------
+This report summarizes an end-to-end IT ticket analytics pipeline built in Python. The project ingests a raw customer support ticket CSV, validates and cleans the data, performs statistical and exploratory analysis, loads the cleaned data into SQLite, runs analytical SQL queries, and applies a GenAI assistant to summarize, categorize, and suggest resolutions for tickets. All numbers below are computed from the actual dataset provided.
+
+1. Dataset
+----------------------------------------
+  Dataset file:  customer_support_tickets.csv
+  Source:        Local file in data/raw/ (copy of dataset provided to the pipeline)
+  Rows (raw):    8469
+  Columns (raw): 17
+  Column names:  ['Ticket ID', 'Customer Name', 'Customer Email', 'Customer Age', 'Customer Gender', 'Product Purchased', 'Date of Purchase', 'Ticket Type', 'Ticket Subject', 'Ticket Description', 'Ticket Status', 'Resolution', 'Ticket Priority', 'Ticket Channel', 'First Response Time', 'Time to Resolution', 'Customer Satisfaction Rating']
+  Rows cleaned:  8469
+
+2. Methodology
+----------------------------------------
+  - Python + Pandas + NumPy for data validation, cleaning and analysis.
+  - SQLAlchemy + SQLite for a local relational store and analytical queries.
+  - GenAI pipeline with OpenAI-compatible client and robust MOCK fallback.
+  - Structured JSON validation, retry logic and cost-controlled sample size.
+  - Matplotlib/Seaborn visualizations in notebooks; Power BI spec in powerbi/.
+
+3. Key Results (actual metrics from the dataset)
+----------------------------------------
+  total_tickets: 8469
+  total_ticket_types: 5
+  total_products: 42
+  total_customers: 8028
+  total_channels: 4
+  total_resolved: 2769
+  total_unresolved: 5700
+  total_open: 2819
+  avg_resolution_hours: 7.58
+  median_resolution_hours: 6.35
+  min_resolution_hours: 0.0
+  max_resolution_hours: 23.47
+  avg_satisfaction: 2.99
+
+4. SQL
+----------------------------------------
+  SQLite DB file: ./outputs/it_tickets.db
+  Queries defined: 10
+   - 01_total_ticket_count
+   - 02_tickets_by_category
+   - 03_tickets_by_priority
+   - 04_tickets_by_product
+   - 05_unresolved_tickets
+   - 06_avg_and_max_resolution_time
+   - 07_high_priority_unresolved
+   - 08_monthly_ticket_volume
+   - 09_product_resolution_performance
+   - 10_channel_performance
+
+5. GenAI
+----------------------------------------
+  Mode:                  MOCK
+  Tickets processed:     100
+  Configured max cap:    100
+  Output CSV:            d:\Projects\IT tickets Analysis\genai-it-ticket-analytics\outputs\genai_results\genai_ticket_analysis.csv
+
+6. Tests
+----------------------------------------
+  Status: PASSED
+
+7. Limitations
+----------------------------------------
+  - Dataset is a synthetic/public sample and may not generalize to all organizations.
+  - GenAI suggestions are NOT guaranteed correct; always validate with human support.
+  - Historical ticket dates may span a limited window; trends are bounded by that window.
+  - API-based live GenAI mode is subject to provider rate limits and usage costs.
+  - Correlations observed in EDA are not causal claims.
+
+8. Future Scope
+----------------------------------------
+  - Swap SQLite for a real MySQL/Postgres server when DB credentials are available.
+  - Add NLP clustering (TF-IDF + k-means) over ticket descriptions.
+  - Build a small Streamlit/Gradio UI to paste a ticket and get GenAI suggestions live.
+  - Add SLA tracking, assignee/team tables and workload forecasting.
+
+9. Conclusion
+----------------------------------------
+The project demonstrates a reproducible end-to-end data workflow: raw data -> cleaning -> analysis -> SQL -> GenAI -> Power BI-ready outputs. All metrics and artifacts are generated from the actual dataset provided.

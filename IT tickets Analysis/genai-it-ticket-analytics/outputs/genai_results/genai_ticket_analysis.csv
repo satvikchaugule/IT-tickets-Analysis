@@ -1,0 +1,9 @@
+summary,category,suggested_priority,possible_cause,suggested_resolution,_genai_status,ticket_id
+Ticket regarding vpn connection failure under category technical issue. User notes: Every time I try to connect to the office VPN I get an authentication error. My network is working fine. Password works ...,Technical issue,High,Possible network connectivity or VPN authentication issue.,"1. Verify internet connectivity.
+2. Re-enter VPN credentials and retry connection.
+3. Restart VPN client and device.
+4. Escalate to Network Admin if issue persists.",ok,1001
+Ticket regarding vpn connection failure under category technical issue. User notes: Every time I try to connect to the office VPN I get an authentication error. My network is working fine. Password works ...,Technical issue,High,Possible network connectivity or VPN authentication issue.,"1. Verify internet connectivity.
+2. Re-enter VPN credentials and retry connection.
+3. Restart VPN client and device.
+4. Escalate to Network Admin if issue persists.",ok,1001
